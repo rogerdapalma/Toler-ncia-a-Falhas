@@ -1,7 +1,7 @@
 # Exercícios
 (Essas e outras informações estão nos slides da aula 02)
 
-## 1) Entregar no moodle os exercícios desafio, juntamente com os demais abaixo.
+## 1) trabalho feito para entregar no moodle.
 
 ### a) Falha por temporização (timing)
 **Exercício desafio:**  
