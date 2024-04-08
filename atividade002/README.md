@@ -7,14 +7,14 @@
 - M2: 01001010
 - Soma: 11110101
 - Checksum: 00001010
-- Status: Recebida com sucesso
+- Status: Recebida com sucesso!
 
 ### Exemplo 2
 - M1: 10001011
 - M2: 01011010
 - Soma: 11010101
 - Checksum: 00101010
-- Status: Não recebida
+- Status: Não recebida!
 
 ## Código de Hamming
 
