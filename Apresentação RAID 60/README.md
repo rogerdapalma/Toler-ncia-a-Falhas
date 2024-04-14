@@ -2,8 +2,6 @@
 
 **Authors: Roger da Palma, Meani Freitas**
 
-Presentation Link: [GitHub](https://github.com/meanifreitas)
-
 ## Introduction to RAID 60
 
 RAID (Redundant Array of Independent Disks) is a technology that combines multiple hard drives into a single unit to improve performance and/or reliability. RAID 60 is a nested configuration that combines the benefits of RAID 6 (dual fault tolerance) and RAID 0 (performance improvement). It is used in environments that require high performance and fault tolerance, such as database servers and video storage systems.
