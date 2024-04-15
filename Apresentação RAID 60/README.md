@@ -17,7 +17,7 @@ O RAID 6 é uma configuração que utiliza paridade dupla para garantir redundâ
 ### RAID 0 (Striping)
 
 O RAID 0 melhora o desempenho dividindo dados em blocos e distribuindo-os entre vários discos. Isso aumenta a taxa de transferência de dados, pois vários discos podem ser acessados simultaneamente para leitura e escrita.
-
+- Striping é uma técnica para difundir os dados em um volume lógico através de várias unidades de disco de tal forma que a capacidade de E/S das unidades de disco possa ser usada em paralelo para acessar dados no volume lógico.
 ## Vantagens do RAID 60
 
 - **Alta Tolerância a Falhas**: O RAID 60 pode suportar a falha de até dois discos em cada conjunto RAID 0 sem perda de dados. Isso proporciona maior proteção contra perda de dados em comparação com configurações de RAID mais simples, como RAID 0 ou RAID 10.
