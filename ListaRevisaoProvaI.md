@@ -89,7 +89,7 @@ O paradigma de tolerância a falhas refere-se à capacidade de um sistema contin
 - **m6:** 10101101 0
 - **m7:** 11111010 1
 - **m8:** 01010110 1
-- **01000101 0**
+        **01000101 0**
 
 ---
 
