@@ -1,8 +1,6 @@
----
+
 title: "Tratamento de Exceções em Java e Python: Uma Análise Comparativa"
 author: "Roger da Palma"
-date: ""
----
 
 # Abstract
 O manejo de exceções é uma parte essencial para garantir que programas se comportem de maneira previsível mesmo quando encontram erros. Java e Python, duas linguagens populares, utilizam estratégias parecidas para tratar exceções, embora cada uma apresente suas próprias peculiaridades na sintaxe. Isso permite que os programas continuem rodando suavemente, mesmo diante de problemas durante a execução.
@@ -37,10 +35,12 @@ O tratamento de exceções é essencial para a construção de programas robusto
 - Utilizar else no bloco try para executar código que deve correr apenas se o bloco try não lançar nenhuma exceção.
 
 ![Conceitos Básicos em Python](python.png)
-*Conceitos Básicos em Python*
+
+- Conceitos Básicos em Python*
 
 ![Conceitos Basicos aplicados em um codigo](python2.png)
-*Conceitos Basicos aplicados em um codigo*
+
+- *Conceitos Basicos aplicados em um codigo*
 
 # Comparação entre Java e Python
 Sintaxe e Palavras-chave: Ambas as linguagens usam uma estrutura similar com try e finally. A principal diferença está no uso de catch (Java) versus except (Python). Além disso, em Python, a exceção é geralmente referenciada como e usando a palavra as, enquanto em Java usa-se e diretamente.
