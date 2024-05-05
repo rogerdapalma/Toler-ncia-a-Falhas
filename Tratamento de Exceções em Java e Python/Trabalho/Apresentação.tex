@@ -1,0 +1,127 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Definição de cores para os blocos de código
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Configurações para exibição de código
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Tratamento de Exceções em Java e Python: Uma Análise Comparativa}
+\author{Roger da Palma}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+O manejo de exceções é uma parte essencial para garantir que programas se comportem de maneira previsível mesmo quando encontram erros. Java e Python, duas linguagens populares, utilizam estratégias parecidas para tratar exceções, embora cada uma apresente suas próprias peculiaridades na sintaxe. Isso permite que os programas continuem rodando suavemente, mesmo diante de problemas durante a execução.
+\end{abstract}
+
+\section{Introdução}
+O tratamento de exceções é essencial para a construção de programas robustos. Este documento explora como Java e Python abordam o tratamento de exceções, destacando suas características principais e diferenças.
+
+\section{Tratamento de Exceções em Java}
+Conceitos Principais:
+\begin{itemize}
+    \item Exceção: Evento que ocorre durante a execução de um programa e que interrompe o fluxo normal de instruções \cite{java_tut}.
+    \item Try-Catch: Bloco try é usado para encapsular o código que pode lançar uma exceção, enquanto o bloco catch é usado para tratar a exceção \cite{java_doc}.
+\end{itemize}
+Boas Práticas:
+\begin{itemize}
+    \item Tratar exceções específicas sempre que possível, em vez de usar uma abordagem genérica \cite{java_practices}.
+    \item Utilizar o bloco finally para liberar recursos, como fechar conexões de arquivos ou de banco de dados, independente de uma exceção ser lançada ou não \cite{java_doc}.
+    \item Evitar o uso excessivo de exceções como controle de fluxo lógico \cite{java_practices}.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{java.png}
+    \caption{Conceitos Básicos em Java}
+    \label{fig:imagem1}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{java2.png}
+    \caption{Conceitos Basicos aplicados em um codigo}
+    \label{fig:imagem2}
+\end{figure}
+
+\section{Tratamento de Exceções em Python}
+Conceitos Principais:
+\begin{itemize}
+    \item Exceção: Interrupções que ocorrem durante a execução que são captadas pelo interpretador \cite{python_doc}.
+    \item Try-Except: Bloco try é usado para monitorar uma exceção que pode ocorrer e except é usado para capturar a exceção que ocorreu \cite{python_doc}.
+\end{itemize}
+Boas Práticas:
+\begin{itemize}
+    \item Capturar exceções específicas ao invés de uma captura genérica, o que ajuda a tratar o erro de maneira mais adequada \cite{python_practices}.
+    \item Utilizar finally para garantir que recursos sejam liberados, como arquivos e conexões de rede, mesmo que uma exceção seja lançada \cite{python_doc}.
+    \item Utilizar else no bloco try para executar código que deve correr apenas se o bloco try não lançar nenhuma exceção \cite{python_practices}.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{python.png}
+    \caption{Conceitos Básicos em Python}
+    \label{fig:imagem2}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{python2.png}
+    \caption{Conceitos Basicos aplicados em um codigo}
+    \label{fig:imagem4}
+\end{figure}
+
+\section{Comparação entre Java e Python}
+Sintaxe e Palavras-chave: Ambas as linguagens usam uma estrutura similar com try e finally. A principal diferença está no uso de catch (Java) versus except (Python). Além disso, em Python, a exceção é geralmente referenciada como e usando a palavra as, enquanto em Java usa-se e diretamente \cite{java_tut, python_doc}.
+
+Tipos de Exceções: Java é uma linguagem de tipagem estática e exige que o tipo de exceções capturadas seja explicitamente declarado. Python, sendo dinâmico, permite uma maior flexibilidade na captura de exceções sem necessariamente declarar seus tipos \cite{java_tut, python_doc}.
+
+Controle de Fluxo: Em ambos os sistemas, o controle de fluxo é desviado para o bloco de captura assim que uma exceção é lançada, e o bloco finally é executado ao final do processo para garantir que os recursos sejam liberados adequadamente \cite{java_doc, python_doc}.
+
+Práticas Recomendadas: Em ambas as linguagens, é considerada uma boa prática utilizar exceções para lidar com condições excepcionais e não como parte do fluxo normal de um programa. Além disso, é recomendável sempre limpar os recursos em um bloco finally ou usando gerenciadores de contexto em Python (with) \cite{java_practices, python_practices}.
+
+\section{Conclusão}
+Ambas as linguagens fornecem mecanismos robustos para o tratamento de exceções, visando garantir que os programas possam lidar com condições de erro sem interromper abruptamente a execução. A sintaxe e as práticas recomendadas ajudam os desenvolvedores a escrever código mais seguro e fácil de manter.
+
+\section{Referencias}
+\begin{thebibliography}{99}
+\bibitem{java_tut} Oracle. \emph{The Java Tutorials}, \url{https://docs.oracle.com/javase/tutorial/essential/exceptions/catch.html}.
+\bibitem{java_doc} DevMedia. \emph{Blocos try-catch}, \url{https://www.devmedia.com.br/blocos-try-catch/7339}.
+\bibitem{java_practices} W3Schools. \emph{Java Try and Catch}, \url{https://www.w3schools.com/java/java_try_catch.asp}.
+\bibitem{python_doc} Python Documentation. \emph{Errors and Exceptions}, \url{https://docs.python.org/3/tutorial/errors.html}.
+\bibitem{python_practices} Stack Overflow. \emph{Qual a função do try e do except}, \url{https://pt.stackoverflow.com/questions/316516/qual-a-função-do-try-e-do-except}.
+\end{thebibliography}
+\end{document}
