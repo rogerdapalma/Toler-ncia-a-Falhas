@@ -1,11 +1,11 @@
 
-title: "Tratamento de Exceções em Java e Python: Uma Análise Comparativa"
+# "Tratamento de Exceções em Java e Python: Uma Análise Comparativa"
 author: "Roger da Palma"
 
-# Abstract
+## Abstract
 O manejo de exceções é uma parte essencial para garantir que programas se comportem de maneira previsível mesmo quando encontram erros. Java e Python, duas linguagens populares, utilizam estratégias parecidas para tratar exceções, embora cada uma apresente suas próprias peculiaridades na sintaxe. Isso permite que os programas continuem rodando suavemente, mesmo diante de problemas durante a execução.
 
-# Introdução
+## Introdução
 O tratamento de exceções é essencial para a construção de programas robustos. Este documento explora como Java e Python abordam o tratamento de exceções, destacando suas características principais e diferenças.
 
 ## Tratamento de Exceções em Java
