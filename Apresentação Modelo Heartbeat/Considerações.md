@@ -1,4 +1,4 @@
-- O modelo Heartbeat é um dos vários modelos usados em sistemas distribuídos para detectar falhas e garantir a confiabilidade do sistema. Ele implementa um mecanismo simples e eficaz, onde processos enviam periodicamente mensagens "heartbeat" para indicar que estão operacionais. Se um processo não recebe uma mensagem heartbeat dentro de um período de tempo esperado, ele assume que o emissor falhou.
+O modelo Heartbeat é um dos vários modelos usados em sistemas distribuídos para detectar falhas e garantir a confiabilidade do sistema. Ele implementa um mecanismo simples e eficaz, onde processos enviam periodicamente mensagens "heartbeat" para indicar que estão operacionais. Se um processo não recebe uma mensagem heartbeat dentro de um período de tempo esperado, ele assume que o emissor falhou.
 
 ## Como o Heartbeat Funciona
 
